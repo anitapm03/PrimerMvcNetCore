@@ -61,5 +61,28 @@ namespace PrimerMvcNetCore.Controllers
             //devolvemos la lista
             return View(numeros);
         }
+
+        [HttpGet]
+        public IActionResult TablaMultiplicarSimple()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult TablaMultiplicarSimple(int numero)
+        {
+            List<string> operaciones = new List<string>();
+            int resultado;
+            string op;
+            for (int i = 0; i < 10; i++)
+            {
+                
+                resultado = numero * i;
+                op = numero + " * " + i + " = " + resultado;
+
+                operaciones.Add(op);
+            }
+            return View(operaciones);
+        }
     }
 }
