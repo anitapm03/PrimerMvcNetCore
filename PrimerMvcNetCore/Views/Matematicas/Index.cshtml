@@ -1,0 +1,24 @@
+﻿<h1>
+    Index Matemáticas
+</h1>
+
+<ul>
+    <li>
+        @Html.ActionLink("Sumar Numeros Get",
+        "SumarNumerosGet", "Matematicas",
+        new {num1 = 2, num2 = 4})
+    </li>
+    <li>
+        <a asp-controller="Matematicas"
+        asp-action="SumarNumerosPost">
+            Suma Numeros Post
+        </a>
+    </li>
+    <li>
+        <a asp-controller="Matematicas"
+        asp-action="ConjeturaCollatz">
+            Collatz
+        </a>
+    </li>
+</ul>
+

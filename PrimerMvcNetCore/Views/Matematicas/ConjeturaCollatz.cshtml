@@ -1,0 +1,27 @@
+﻿<h1>Collatz</h1>
+
+<form method="post">
+
+    <label>Numero: </label>
+    <input type="number" name="numero" class="form-control" />
+
+    <br />
+    <button class="btn btn-outline-dark">
+        Calcular!
+    </button>
+</form>
+
+<h3 style="color:orangered">
+    @ViewData["RESULTADOS"]
+</h3>
+
+@if (Model != null)
+{
+    <ul>
+        @foreach (int num in Model)
+        {
+            <li>@num</li>
+        }
+    </ul>
+}
+
