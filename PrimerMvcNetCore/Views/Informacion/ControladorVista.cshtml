@@ -1,0 +1,26 @@
+﻿
+@model Persona
+
+<h1 style="color:aqua">
+    Información Controlador --> Vista
+</h1>
+
+<h2 style="color:white; background-color: darkblue">
+    @Model.Nombre, @Model.Email, @Model.Edad
+</h2>
+
+<h2 style="color:orchid">
+    Nombre: @ViewData["NOMBRE"]
+</h2>
+
+<h2 style="color:forestgreen">
+    Edad: @ViewData["EDAD"]
+</h2>
+
+<h2 style="color:darkgoldenrod">
+    Dia semana Data: @ViewData["DIASEMANA"]
+</h2>
+
+<h2 style="color:darkgoldenrod">
+    Dia semana Bag: @ViewBag.DiaSemana
+</h2>
